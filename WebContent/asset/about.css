@@ -38,6 +38,7 @@
 .about p{
   text-align: justify;
   margin-bottom: 20px;
+  font-size: 20px;
 }
 .about a{
   display: inline-block;

@@ -216,3 +216,33 @@
         display: block;
     }
 }
+
+ul.topnav .dropdown-content{
+	display: none;
+	position: absolute;
+}
+
+ul.topnav .dropdown-content a{
+	color: blue;
+}
+
+ul.topnav .dropdown.hover > .dropdown-content{
+	display: block;
+}
+
+.subNav{
+	position: absolute;
+	top: 40px;
+	left: 0;
+	right: 0;
+	display: none;
+}
+
+.subNav > li{
+	width: initial;
+	height: 40px;
+}
+
+ul > li:hover .subNav{
+	display: block;
+}
