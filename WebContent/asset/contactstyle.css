@@ -19,9 +19,10 @@
       background: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.9)),url(contact.jpg);
       background-size: cover;
       background-position: center;
-      height: 100%;
+      height: 105%;
       width: 100% ;
       padding-bottom: 2%;
+      
     }
 
     #contact-section .container h2{

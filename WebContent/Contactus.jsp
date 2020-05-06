@@ -1,12 +1,14 @@
+<!-- Done -->
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
+   
 <!DOCTYPE html>
 <html>
 <head>
 <meta charset="ISO-8859-1">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet" href="asset/contactstyle.css">
-<link rel="stylesheet" href="css/navigation.css">
+  <link rel="stylesheet" href="css/navi.css"> 
 <link rel="icon" type="image/png" href="images/cde.png">
 <title>Contact Us</title>
 </head>
@@ -22,8 +24,9 @@
 			<ul>
 				<li><a href="Home.jsp">Home</a></li>
 				<li><a href="aboutus.jsp">About Us</a></li>	
-				<li><a href="index.jsp">Functions</a></li>	
-				<li><a href="feedback.jsp">Feedback</a></li>
+				<li><a href="index.jsp">Complexity</a></li>	
+				<li><a href="#">Weight</a></li>	
+				<li><a href="Feedback.jsp">Feedback</a></li>
 				<li><a href="Contactus.jsp">Contact</a></li>
 			</ul>
 		</div>	
@@ -39,6 +42,8 @@
 	</div>
 	
 </nav>
+
+
 
 <section id="contact-section">
 	<div class="container">

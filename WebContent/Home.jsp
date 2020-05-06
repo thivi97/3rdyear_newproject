@@ -27,7 +27,7 @@
 						<li><a href="#">Weight</a></li>
 					</ul>
 				</li>	
-				<li><a href="feedback.jsp">Feedback</a></li>
+				<li><a href="Feedback.jsp">Feedback</a></li>
 				<li><a href="Contactus.jsp">Contact</a></li>
 			</ul>
 		</div>	
@@ -44,16 +44,6 @@
 	
 </nav>
 
-
-<img src="css/tenor.gif" alt="cdequality" style="width:400px;height:200px;margin-left :35%;padding:10px;  align:center; margin-top: 100px;">
-
-<br>
-<br>
-<br>
-
-<p>
-Than complicated. It's OK to build very complex software, but you don't have to build it in a complicated way. Lizard is a free open source tool that analyse the complexity of your source code right away supporting many programming languages, without any extra setup. It also does code clone / copy-paste detection.
-</p>
 
 </body>
 </html>

@@ -1,6 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
-<jsp:include page="header.jsp"></jsp:include>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -9,12 +9,12 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
 <title>About Us</title>
-<link rel="stylesheet" href="css/navigation.css">
+<link rel="stylesheet" href="css/navi.css">
 <link rel="stylesheet" href="asset/about.css">
     
 </head>
 <body>
-<%-- 
+
 <nav class="nav">
 	<div class="container">
 		<div class="logo">
@@ -26,8 +26,8 @@
 				<li><a href="Home.jsp">Home</a></li>
 				<li><a href="aboutus.jsp">About Us</a></li>	
 				<li><a href="index.jsp">Functions</a></li>	
-				<li><a href="feedback.jsp">Feedback</a></li>
-				<li><a href="contact.jsp">Contact</a></li>
+				<li><a href="Feedback.jsp">Feedback</a></li>
+				<li><a href="Contactus.jsp">Contact</a></li>
 			</ul>
 		</div>	
 		
@@ -42,7 +42,7 @@
 	</div>
 	
 </nav>
---%>
+
 
 <div class="about-section">
         <div class="inner-width">
