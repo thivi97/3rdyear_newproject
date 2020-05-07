@@ -39,7 +39,7 @@
             <div class="sidebar">
                 <h2>CDE SOLUTIONS</h2>
                 <ul>
-                    <li><a href="#"><i class="fas fa-home"></i>HOME</a></li>
+                    <li><a href="index.jsp"><i class="fas fa-home"></i>HOME</a></li>
                     <li><a href="size.jsp"><i class="fas fa-size"></i>SIZE</a></li>
                     <li><a href="method.jsp"><i class="fas fa-method"></i>METHOD</a></li>
                     <li><a href="variable.jsp"><i class="fas fa-variable"></i>VARIABLE</a></li>
@@ -49,11 +49,7 @@
                     <li><a href="#"><i class="fas fa-total"></i>TOTAL</a></li>
                     <li><a href="login.jsp"><i class="fas fa-total"></i>Logout</a></li>
                 </ul>
-                <div class="social_media">
-                    <a href="#"><i class="fab fa-fb"></i></a>
-                    <a href="#"><i class="fab fa-twit"></i></a>
-                    <a href="#"><i class="fab fa-insta"></i></a>
-                </div>
+                
                     
             </div>
             
