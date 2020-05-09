@@ -45,6 +45,7 @@ https://www.tooplate.com/view/2113-earth
             <li><a href="#2"><img src="assets/images/icon-2.png" alt=""> <em>About Us</em></a></li>
             <li><a href="#3"><img src="assets/images/icon-3.png" alt=""> <em>Functions</em></a></li>
             <li><a href="#4"><img src="assets/images/icon-4.png" alt=""> <em>Contact Us</em></a></li>
+            <li><a href="#5"><img src="assets/images/icon-5.png" alt=""> <em>Log Out</em></a></li>
           </ul>
         </nav>
         
@@ -128,6 +129,14 @@ https://www.tooplate.com/view/2113-earth
                 <div class="container-fluid">
                     <div class="row">
                         <div class="owl-carousel owl-theme">
+                        <div class="col-md-12">
+                                <div class="featured-item">
+                                   <a href="indexComplexity.jsp"><img src="assets/images/item-04.jpg" alt=""></a> 
+                                    <div class="down-content">
+                                        <h4>Complexity</h4>
+                                    </div>
+                                </div>
+                            </div>
                             <div class="col-md-12">
                                 <div class="featured-item"> 
                                 	<a href="variable.jsp"><img src="assets/images/item-01.jpg" alt=""></a>
@@ -172,6 +181,7 @@ https://www.tooplate.com/view/2113-earth
                                     </div>
                                 </div>
                             </div>
+                          
                             <div class="col-md-12">
                                 <div class="featured-item">
                                    <a href="control.jsp"><img src="assets/images/item-06.jpg" alt=""></a> 
@@ -180,6 +190,15 @@ https://www.tooplate.com/view/2113-earth
                                     </div>
                                 </div>
                             </div>
+                              <div class="col-md-12">
+                                <div class="featured-item">
+                                   <a href="indexWeight.jsp"><img src="assets/images/item-01.jpg" alt=""></a> 
+                                    <div class="down-content">
+                                        <h4>Weight</h4>
+                                    </div>
+                                </div>
+                            </div>
+                            
                             <div class="col-md-12">
                                 <div class="featured-item">
                                     <img src="assets/images/item-07.jpg" alt="">

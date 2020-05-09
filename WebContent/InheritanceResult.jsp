@@ -3,9 +3,9 @@
 <%@ page import="java.io.File" %>
 <%@ page import="java.io.FileNotFoundException" %>
 <%@ page import="java.util.Scanner" %>
-<%@ page import="com.model.Inheritance" %>   
+  
 <%@ page import="com.util.FileUpload" %> 
-<%@ page import="com.model.InheritanceTest" %>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -82,13 +82,13 @@
 					      Scanner myReader = new Scanner(myObj);
 					      while (myReader.hasNextLine()) {
 					        String data = myReader.nextLine();
-					        int DI = Inheritance.getDI(data);
+					    //    int DI = Inheritance.getDI(data);
 					        int II = 1;
 					        out.print("<tr>");
 				        	out.print("<th scope="+row+">"+(++count)+"</th><td>"+data+"</td>"); // LINE
-				        	out.print("<th scope="+row+">"+DI+"</th>"); // DI
+				        	//out.print("<th scope="+row+">"+DI+"</th>"); // DI
 				        	out.print("<th scope="+row+">"+II+"</th>"); // II
-				        	out.print("<th scope="+row+">"+(DI+II)+"</th>"); // TI
+				        //	out.print("<th scope="+row+">"+(DI+II)+"</th>"); // TI
 				        	out.print("</tr>");
 					      }
 					      myReader.close();
