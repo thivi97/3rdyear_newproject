@@ -246,7 +246,7 @@ https://www.tooplate.com/view/2113-earth
                             </div>
                             <div class="col-md-12">
                                 <div class="featured-item">
-                                    <img src="assets/images/item-04.jpg" alt="">
+                                  <a href="controlWeight.jsp"><img src="assets/images/item-04.jpg" alt=""></a>
                                     <div class="down-content">
                                         <h4>Weight Control Structure</h4>
                                         
