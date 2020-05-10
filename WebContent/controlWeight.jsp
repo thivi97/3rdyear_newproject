@@ -1,0 +1,174 @@
+<%-- 
+    Document   : controlWeight
+    Created on : May 10, 2020, 9:48:16 AM
+    Author     : MAC
+--%>
+
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Weight due to Control Structure</title>
+<link rel="icon" type="image/png" href="images/cde.png">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<script	src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="css/bootstrap.css"> 
+        <link rel="stylesheet" href="css/stylesheet.css">
+       <link rel="stylesheet" href="css/styles.css">
+        <script src="https://kit.fontawesome.com/b99e675b62.js"></script>
+
+<%-- <link rel="stylesheet" href="css/weightpage.css">
+<link rel="stylesheet" href="css/weightTable.css">
+
+<script type="css/weightpage.js"></script>
+
+--%>
+
+</head>
+<body>
+	
+
+ <div class="wrapper">
+            <div class="sidebar">
+                <h2>CDE SOLUTIONS</h2>
+                <ul>
+                    <li><a href="indexWeight.jsp"><i class="fas fa-home"></i>HOME</a></li>
+                    <li><a href="sizeWeight.jsp"><i class="fas fa-size"></i>SIZE</a></li>
+                    <li><a href="methodWeight.jsp"><i class="fas fa-method"></i>METHOD</a></li>
+                    <li><a href="variableWeight.jsp"><i class="fas fa-variable"></i>VARIABLE</a></li>
+                    <li><a href="InheritanceWeight.jsp"><i class="fas fa-inheritance"></i>INHERITANCE</a></li>
+                    <li><a href="couplingWeight.jsp"><i class="fas fa-coupling"></i>COUPLING</a></li>
+                    <li><a href="controlWeight.jsp"><i class="fas fa-control"></i>CONTROL STRUCTURE</a></li>
+                    <li><a href="total.jsp"><i class="fas fa-total"></i>TOTAL</a></li>
+                    <li><a href="login.jsp"><i class="fas fa-login"></i>LOGOUT</a></li>
+                </ul>
+         <%--      <div class="social_media">
+                    <a href="#"><i class="fab fa-fb"></i></a>
+                    <a href="#"><i class="fab fa-twit"></i></a>
+                    <a href="#"><i class="fab fa-insta"></i></a>
+                </div>
+              --%>        
+            </div>
+            
+        </div>
+
+<h1 class="text-center" style="padding-bottom: 20px; padding-top: 20px;">Weights related to the control structure factor</h1>
+
+<div class="container">
+<hr>
+
+<div class="card" style="margin-left:150px;">
+<table class="table table-hover shopping-cart-wrap" style="margin-left: 50px;">
+                      <thead class="text-muted">
+                        <tr>
+                            <th scope="col" >Control Structure Type</th>
+                             <th scope="col" width="80">Weight</th>
+                        </tr>
+                      </thead>
+             <tbody>
+                    <tr>
+                        <td>
+                            <h4 >A conditional control structure such as an ?if? or ?else-if? condition:</h4>
+                        </td>
+
+                        <td><select class="form-control">
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                            <option>6</option>
+                            <option>7</option>
+                            <option>8</option>
+                            <option>9</option>
+                            <option>10</option>
+                         </select>
+                         </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <h4>An iterative control structure such as a ?for?, ?while?, or ?do-while? loop:</h4>
+                        </td>
+
+                        <td><select class="form-control">
+                                 <option>1</option>
+                                 <option>2</option>
+                                 <option>3</option>
+                                 <option>4</option>
+                                 <option>5</option>
+                                 <option>6</option>
+                                 <option>7</option>
+                                 <option>8</option>
+                                 <option>9</option>
+                                 <option>10</option>
+                             </select>
+                        </td>
+                    </tr>
+
+
+                    <tr>
+                        <td>
+                            <h4>The ?switch? statement in a ?switch-case? control structure:</h4>
+                        </td>
+
+                        <td><select class="form-control">
+                               <option>1</option>
+                               <option>2</option>
+                               <option>3</option>
+                               <option>4</option>
+                               <option>5</option>
+                               <option>6</option>
+                               <option>7</option>
+                               <option>8</option>
+                               <option>9</option>
+                               <option>10</option>
+                            </select>
+                        </td>
+                    </tr>
+
+
+                    <tr>
+                        <td>
+                           <h4>Each ?case? statement in a ?switch-case? control structure:</h4>
+                        </td>
+
+                        <td><select class="form-control">
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                                <option>5</option>
+                                <option>6</option>
+                                <option>7</option>
+                                <option>8</option>
+                                <option>9</option>
+                                <option>10</option>
+                            </select>
+                        </td>
+                    </tr>
+
+
+
+
+
+             </tbody>
+
+           </table>
+
+        </div>
+
+
+
+  </div>
+<br>
+<br>
+
+
+
+
+</body>
+</html>

@@ -79,6 +79,7 @@ public class Main {
 			inheritanceService.process3(this.fileList);
 			return status;
 		}
+		return status;
 	}
 	
 

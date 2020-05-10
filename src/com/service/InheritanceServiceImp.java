@@ -1,7 +1,10 @@
 package com.service;
 
 import java.util.ArrayList;
+import java.util.Scanner;
+import java.io.File;
 
+import com.model.FileRead;
 import com.model.CustomFile;
 import com.model.Line;
 import com.model.Inherit;
@@ -64,6 +67,10 @@ public class InheritanceServiceImp implements InheritanceService {
 		for(CustomFile file : fileList) {
 			 getDirectInheritanceList(file);
 			 getIndirectInheritanceList(file);
+		}
+		
+		for(CustomFile file : fileList) {
+			file.getInheritance().setNdi(file.getInheritance());
 		}
 		
 		

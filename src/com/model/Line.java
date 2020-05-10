@@ -16,6 +16,10 @@ public class Line {
 		
 	}
 	
+	public Line(int count, String nextLine) {
+		// TODO Auto-generated constructor stub
+	}
+
 	public CustomFile getFile() {
 		return file;
 	}
