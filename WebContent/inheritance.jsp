@@ -111,7 +111,7 @@
                         <a href="resultinheritance.jsp"><input name="btnsum2" type="submit" value="next"></a>
                         <br>
                         <br>
-                        <a href="InheritanceWeight.jsp"><input name="btnsum2" type="sub" value="Codecomplexity weight"></a>
+                     <!--    <a href="InheritanceWeight.jsp"><input name="btnsum2" type="sub" value="Codecomplexity weight"></a>	--> 
             </div>
             
         </div>

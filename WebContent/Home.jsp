@@ -77,8 +77,8 @@ https://www.tooplate.com/view/2113-earth
                 </div>
                 <div id="thumbnail">
                   <ul>
-                    <li class="active"><img src="assets/images/thumb-01.jpg" alt="Earth" /></li>
-                    <li><img src="assets/images/thumb-02.jpg" alt="Meeting" /></li>
+                    <li class="active"><img src="assets/images/thum-01.jpg" alt="Earth" /></li>
+                    <li><img src="assets/images/thum-02.jpg" alt="Meeting" /></li>
                     <li><img src="assets/images/thumb-03.jpg" alt="Smart" /></li>         
                   </ul>
                 </div>
@@ -305,7 +305,6 @@ https://www.tooplate.com/view/2113-earth
 
     <script type="text/javascript">
         $(document).ready(function() {
-
             // navigation click actions 
             $('.scroll-link').on('click', function(event){
                 event.preventDefault();

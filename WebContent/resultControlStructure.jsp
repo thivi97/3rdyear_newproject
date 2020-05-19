@@ -37,12 +37,7 @@
                     <li><a href="#"><i class="fas fa-total"></i>TOTAL</a></li>
                     <li><a href="login.jsp"><i class="fas fa-total"></i>Logout</a></li>
                 </ul>
-                <div class="social_media">
-                    <a href="#"><i class="fab fa-fb"></i></a>
-                    <a href="#"><i class="fab fa-twit"></i></a>
-                    <a href="#"><i class="fab fa-insta"></i></a>
-                </div>
-                    
+                                    
             </div>
             
         </div>
