@@ -180,7 +180,7 @@
 </div>
 <br>
 <br>
-<%-- 
+
 <article class="bg-secondary mb-3" style="padding-bottom: 199px;">
 <div class="card-body text-center">
 <br>
@@ -201,7 +201,7 @@
 <br>
 </article>
 
---%>
+
 
 
 

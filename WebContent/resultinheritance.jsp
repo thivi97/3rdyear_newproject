@@ -170,11 +170,13 @@
           <div class="btn1">
            <div class="bt"><a href=inheritance.jsp><button class="btn btn-primary" type="submit" data-toggle="modal" data-target="#exampleModalCenter"> Back</button></div>
   		</div>
-        
-     <%--       <div class="btn2">
-               <div class="bt"><a href=genaratereport.jsp> <button class="btn btn-primary" type="submit" data-toggle="modal" data-target="#exampleModalCenter">Save</button></a></div>
+        <br>
+        <br>
+        <br>
+         <div class="btn2" style="margin-left: 350px; margin-top: 70px;">
+               <div class="bt"><a href=InheritanceWeight.jsp> <button class="btn btn-primary" type="submit" data-toggle="modal" data-target="#exampleModalCenter">Edit Weight</button></a></div>
         </div>
-         --%>
+       
          </div>
         
         

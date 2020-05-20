@@ -90,15 +90,15 @@
                     <div>
                         <h3>Choose File to upload </h3>
                         <br>
-                     <%--   <form action="" enctype="multipart/form-data" method="post"> --%> 
+                      <form action="FileSelectServlet" enctype="multipart/form-data" method="post"> 
                             Select<input type="file" name="file_name"/>
-                            <a href="resultinheritance.jsp"><input type="submit" value="upload"/></a>
+                            <a href="resultinheritance.jsp"><input type="submit" value="Inheritance"/></a>
                         </form>
                     </div>
                     <br>
                     <br>
                     <br>
-                    <form method="post" action="index.jsp">
+                    <form method="post" action="codeServlet">
                         <textarea name="tx" placeholder="Write Something..." style="height: 200px">${requestScope["message"]}</textarea>
                         
                     
@@ -108,7 +108,7 @@
                         </div>
                         --%>
                     </form>    
-                        <a href="resultinheritance.jsp"><input name="btnsum2" type="submit" value="next"></a>
+                        <a href="resultinheritance.jsp"><input name="btnsum2" type="submit" value="Inheritance"></a>
                         <br>
                         <br>
                      <!--    <a href="InheritanceWeight.jsp"><input name="btnsum2" type="sub" value="Codecomplexity weight"></a>	--> 
