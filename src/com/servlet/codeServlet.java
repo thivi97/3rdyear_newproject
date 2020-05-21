@@ -181,6 +181,11 @@ public class codeServlet extends HttpServlet {
 			request.setAttribute("inheritanceList", inheritanceList);
 			request.getRequestDispatcher("Result.jsp").forward(request, response);
 		}
+		
+		if(button.contentEquals("Inherit")) {
+			request.getRequestDispatcher("InheritanceWeight.jsp").forward(request, response);
+		}
+		
 		if(button.equals("ControlStructure")) {
 			
 			
