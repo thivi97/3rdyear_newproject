@@ -24,7 +24,9 @@ import org.apache.commons.fileupload.FileItem;
 import org.apache.commons.fileupload.disk.DiskFileItemFactory;
 import org.apache.commons.fileupload.servlet.ServletFileUpload;
 
-
+import com.javaClass.Size;
+import com.javaClass.SizeVariable;
+import com.javaClass.variable;
 import com.model.Inheritance;
 import com.service.InheritanceModel;
 
@@ -141,38 +143,33 @@ public class codeServlet extends HttpServlet {
 		String button = request.getParameter("button");
 		//.out.println(code);
 		if(button.equals("Size")) {
-			
+			Size size = new Size();
+			size.setCode(code);
+			String tb = size.getTable();
 
-//			Size size = new Size();
-//			size.setCode(code);
-//			String tb = size.getTable();
-//
-//			
-//			SizeVariable sizeVariable = new SizeVariable();
+		SizeVariable sizeVariable = new SizeVariable();
 //			
 //			
 //
 //			
-//			request.setAttribute("size", tb);
+		request.setAttribute("size", tb);
 			request.getRequestDispatcher("WeightSize.jsp").forward(request, response);
 		}
 		if(button.equals("Method")) {
-			
-//			SizeVariable sizeVariable = new SizeVariable();
-//			sizeVariable.setCode(code);
-//			String tb =	sizeVariable.getTable();
-//
-//			request.setAttribute("method", tb);
+			SizeVariable sizeVariable = new SizeVariable();
+			sizeVariable.setCode(code);
+			String tb =	sizeVariable.getTable();
+
+		request.setAttribute("method", tb);
 			request.getRequestDispatcher("WeightMethod.jsp").forward(request, response);
 			}
 			
 		if(button.equals("Variable")) {
-	
-//			variable Variable = new variable();
-//			Variable.setCode(code);
-//			String tb = Variable.getTable();
-//			
-//			request.setAttribute("variable", tb);
+			variable Variable = new variable();
+			Variable.setCode(code);
+			String tb = Variable.getTable();
+			
+			request.setAttribute("variable", tb);
 			request.getRequestDispatcher("WeightVariable.jsp").forward(request, response);
 		}
 		
