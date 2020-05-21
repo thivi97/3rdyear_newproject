@@ -81,46 +81,21 @@
             
         </div>
         
-        <div id="result1">
-            <div style="margin-left: 25%; padding: 1px 16px;height: 1000px;">
-                <div class="row">
+        
                     <br>
                     <br>
                     <br>
-                    <br>
-                    <br>
-                    <div>
-                        <h3>Choose File to upload </h3>
-                        <br>
-                        
-                        <form action= 'FileSelectServlet'>
-<%
-FileUpload fu = new FileUpload();
-out.print(fu.getFileList());
-%>
- Select<input type="file" name="file_name"/>
-                            <a href="Result.jsp"><input type="submit" value="Inheritance"/></a>
-
-</form>
-              
-                           
-                        
-                        
-                    </div>
-                    <br>
-                    <br>
-                    <br>
-                    <form action="codeServlet" method=POST>
-                        <textarea  name = "code" rows = "15" cols="100" placeholder="COPY YOUR CODE HERE"   Style = "" >${tb}</textarea>
-                        
+                    <form action="codeServlet" method=POST  Style = "margin-left: 100px;" >
+                        <textarea  name = "code" rows = "15" cols="100" placeholder="COPY YOUR CODE HERE"   Style = "margin-left: 130px;" >${tb}</textarea>
+                        <input class = "btn btn-primary" type = "submit" name = "button" value = "Inheritance"  style = "height: 50px; width: 100px; float: right; margin-top: 50px; margin-left: 270px;">
                     
-                </div>
+              
                       <%--   <div class="row">
                             <button type="save" onclick="alert('successful!')">SAVE</button>
                         </div>
                         --%>
                       
-			<input class = "btn btn-primary" type = "submit" name = "button" value = "Inheritance"  style = "height: 50px; width: 100px; float: left;">
+			
 			
                     </form>    
                         
