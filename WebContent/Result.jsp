@@ -6,15 +6,38 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
-<title>Insert title here</title>
+<title>Complexity due to Inheritance</title>
 <link rel="icon" type="image/png" href="images/cde.png">
 		<link rel="stylesheet" href="css/bootstrap.css"> 
+		<link rel="stylesheet" href="src/export.css"> 
         <link rel="stylesheet" href="css/stylesheet.css">
        <link rel="stylesheet" href="css/styles.css">
         <script src="https://kit.fontawesome.com/b99e675b62.js"></script>
+		<script type="text/javascript" src="src/tableExport.js"></script>
+		<script type="text/javascript" src="jquery.base64.js"></script>
+		<!-- PDF Export -->
+		<script type="text/javascript" src="src/sprintf.js"></script>
+		<script type="text/javascript" src="src/jspdf.js"></script>
+		<script type="text/javascript" src="src/base64.js"></script>
+		
+		<script type="text/javascript" src="src/html2canvas.js"></script>
+		
+		<style>
+			 input[type=button]{
+                background-color: #4CAF50;
+                color: white;
+				margin-left: 450px;               
+                border: none;
+                border-radius: 4px;
+                cursor: pointer;
+                float: center;
+                
+            }
+		</style>
+		
 </head>
 <body>
-
+<!--  
 <div class="wrapper">
             <div class="sidebar">
                 <h2>CDE SOLUTIONS</h2>
@@ -38,10 +61,14 @@
             </div>
             
         </div>
+        -->
         
-        <table>
+        <h3 style="margin-left: 300px; margin-top:50px; ">Complexity due to Inheritance</h3>
+        
+        <br><br><br>
+       <table id="dtBasicExample" class="table table-striped table-bordered table-sm">
 		<thead>
-			<tr>
+			 <tr class="p-3 mb-2 bg-primary text-white">
 				<th>Line No</th>
 				<th>Class Name</th>
 				<th>No of Direct Inheritance</th>
@@ -53,18 +80,42 @@
 		
 		<tbody>
 			<c:forEach var = "inheritanceList" items="${inheritanceList}">
-			<tr>
-					<td>${inheritanceList.getCount() }</td>
+			<tr class="grid">
+					<td>${inheritanceList.getCount()}</td>
 					<td>${inheritanceList.getClassName()}</td>
-					<td>${inheritanceList.getNo_di()}</td>
-					<td>${inheritanceList.getNo_ini()}</td>
-					<td>${inheritanceList.getTot_in()}</td>
+					<td>${inheritanceList.getNo_of_direct_inheritances()}</td>
+					<td>${inheritanceList.getNo_of_indirect_inheritances()}</td>
+					<td>${inheritanceList.getTotal_inheritances()}</td>
 					<td>${inheritanceList.getCi()}</td>
 			</tr>
 			</c:forEach>
 		</tbody>
 		
 		</table>
+		<br>
+		<br>
+		<br>
+		<input type="button" id="btnExport" value="Export"  />
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.22/pdfmake.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/0.4.1/html2canvas.min.js"></script>
+    <script type="text/javascript">
+        $("body").on("click", "#btnExport", function () {
+            html2canvas($('#dtBasicExample')[0], {
+                onrendered: function (canvas) {
+                    var data = canvas.toDataURL();
+                    var docDefinition = {
+                        content: [{
+                            image: data,
+                            width: 500
+                        }]
+                    };
+                    pdfMake.createPdf(docDefinition).download("inheritance.pdf");
+                }
+            });
+        });
+    </script>
 
+		
 </body>
 </html>

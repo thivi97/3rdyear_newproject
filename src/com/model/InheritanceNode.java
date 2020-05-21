@@ -1,52 +1,46 @@
 package com.model;
 
 public class InheritanceNode {
-	
-	private String classname;
-	private String superclass;
-	private String childclass;
-	
-	public InheritanceNode() {
-		
-		// TODO Auto-generated constructor stub
-	}
 
-	public InheritanceNode(String classname, String superclass, String childclass) {
-		super();
-		this.classname = classname;
-		this.superclass = superclass;
-		this.childclass = childclass;
-	}
+	    private String className;
+	    private String superClass;
+	    private String childClass;
+
+	    public InheritanceNode() {
+	    }
+
+	    public InheritanceNode(String className, String superClass, String childClass) {
+	        this.className = className;
+	        this.superClass = superClass;
+	        this.childClass = childClass;
+	    }
+
+	    public String getClassName() {
+	        return className;
+	    }
+
+	    public void setClassName(String className) {
+	        this.className = className;
+	    }
+
+	    public String getSuperClass() {
+	        return superClass;
+	    }
+
+	    public void setSuperClass(String superClass) {
+	        this.superClass = superClass;
+	    }
+
+	    public String getChildClass() {
+	        return childClass;
+	    }
+
+	    public void setChildClass(String childClass) {
+	        this.childClass = childClass;
+	    }
 
 	
-	public String getClassname() {
-		return classname;
-	}
 
-	public void setClassname(String classname) {
-		this.classname = classname;
-	}
 
-	public String getSuperclass() {
-		return superclass;
-	}
-
-	public void setSuperclass(String superclass) {
-		this.superclass = superclass;
-	}
-
-	public String getChildclass() {
-		return childclass;
-	}
-
-	public void setChildclass(String childclass) {
-		this.childclass = childclass;
-	}
-	
-	
-	
-	
-	
-	
 
 }

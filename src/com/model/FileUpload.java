@@ -6,7 +6,11 @@ import java.io.FileReader;
 import java.io.IOException;
 import java.util.ArrayList;
 
+
+
 import com.servlet.FileUploadServlet;
+
+import sun.swing.FilePane;
 
 public class FileUpload {
 	FileUploadServlet fus = new FileUploadServlet();

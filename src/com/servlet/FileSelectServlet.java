@@ -34,7 +34,7 @@ public class FileSelectServlet extends HttpServlet {
 		FileUpload fu = new FileUpload();
 		String button = request.getParameter("button");
 		String code = fu.getCode(button);
-		System.out.println(code);
+		//System.out.println(code);
 		request.setAttribute("tb", code);
 		
 		request.getRequestDispatcher("fileUpload.jsp").forward(request, response);

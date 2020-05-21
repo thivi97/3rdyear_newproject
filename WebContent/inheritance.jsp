@@ -1,3 +1,4 @@
+<%@ page import="com.model.FileUpload" %>
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
 <!DOCTYPE html>
@@ -13,6 +14,7 @@
 <head>
 <meta charset="ISO-8859-1">
 <title>Inheritance</title>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 <link rel="icon" type="image/png" href="images/cde.png">
         <link rel="stylesheet" href="css/styles.css">
         <script src="https://kit.fontawesome.com/b99e675b62.js"></script>
@@ -90,16 +92,26 @@
                     <div>
                         <h3>Choose File to upload </h3>
                         <br>
-                      <form action="FileSelectServlet" enctype="multipart/form-data" method="post"> 
-                            Select<input type="file" name="file_name"/>
-                            <a href="resultinheritance.jsp"><input type="submit" value="Inheritance"/></a>
-                        </form>
+                        
+                        <form action= 'FileSelectServlet'>
+<%
+FileUpload fu = new FileUpload();
+out.print(fu.getFileList());
+%>
+ Select<input type="file" name="file_name"/>
+                            <a href="Result.jsp"><input type="submit" value="Inheritance"/></a>
+
+</form>
+              
+                           
+                        
+                        
                     </div>
                     <br>
                     <br>
                     <br>
-                    <form method="post" action="codeServlet">
-                        <textarea name="tx" placeholder="Write Something..." style="height: 200px">${requestScope["message"]}</textarea>
+                    <form action="codeServlet" method=POST>
+                        <textarea  name = "code" rows = "15" cols="100" placeholder="COPY YOUR CODE HERE"   Style = "" >${tb}</textarea>
                         
                     
                 </div>
@@ -107,8 +119,11 @@
                             <button type="save" onclick="alert('successful!')">SAVE</button>
                         </div>
                         --%>
+                      
+			<input class = "btn btn-primary" type = "submit" name = "button" value = "Inheritance"  style = "height: 50px; width: 100px; float: left;">
+			
                     </form>    
-                        <a href="resultinheritance.jsp"><input name="btnsum2" type="submit" value="Inheritance"></a>
+                        
                         <br>
                         <br>
                      <!--    <a href="InheritanceWeight.jsp"><input name="btnsum2" type="sub" value="Codecomplexity weight"></a>	--> 

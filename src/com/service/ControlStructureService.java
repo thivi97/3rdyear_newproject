@@ -9,7 +9,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
-import model.controlstructure;
+import com.model.controlstructure;
 import com.util.controlCommonConstants;
 
 /**import

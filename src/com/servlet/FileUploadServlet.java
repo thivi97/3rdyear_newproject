@@ -115,14 +115,14 @@ public class FileUploadServlet extends HttpServlet {
 			ServletFileUpload sf  = new ServletFileUpload(new DiskFileItemFactory());
 			List <FileItem> files = sf.parseRequest(request);
 			for(FileItem file : files) {
-				if(file.isInMemory()) {
-					file.delete();
-				}
+//				if(file.isInMemory()) {
+//					file.delete();
+//				}
 				if(file.getName().endsWith(".zip")) {
 					
 					System.out.println("this is a zip file");
 					String path = (derectory + file.getName());
-					String destDir = derectory;
+					String destDir = derectory + file.getName();					
 					file.write(new File(derectory + file.getName()));
 					
 					unzip(path, destDir);	      	      
@@ -163,11 +163,14 @@ public class FileUploadServlet extends HttpServlet {
 	 private static void unzip(String zipFilePath, String destDir) {
 		 	
 		 			 	
-		 
-	        File dir = new File(destDir);
+		 	String newDestDir = destDir.replace(".zip", "");
+	        File dir = new File(newDestDir);
 	        // create output directory if it doesn't exist
-	        if(!dir.exists()) dir.mkdirs();
+	        if(!dir.exists()) {
+	        	dir.mkdirs();
+	        }
 	        
+	       
 	        FileInputStream fis;
 	        //buffer for read and write data to file
 	        byte[] buffer = new byte[1024];
@@ -184,34 +187,39 @@ public class FileUploadServlet extends HttpServlet {
 	                }
 	                
 	                //System.out.println(fileName);
-	                File newFile = new File(destDir +File.separator +ze.getName());
-	                if(newFile.exists()) {
-	                	newFile.delete();
-	                	//System.out.println("deleted exits one");
-	                }
+	                File newFile = new File(newDestDir +File.separator +ze.getName());
+//	                if(newFile.exists()) {
+//	                	newFile.delete();
+//	                	//System.out.println("deleted exits one");
+//	                }
 	                //System.out.println("Unzipping to "+newFile.getAbsolutePath());
 	                if(!filePaths.contains(newFile.getAbsolutePath())) {
 	                filePaths.add(newFile.getAbsolutePath());
 	                }
 	                //create directories for sub directories in zip
 	                new File(newFile.getParent()).mkdirs();
-	                if (ze.isDirectory()) {
-//	                	File newF = new File(destDir + fileName);
-//	                	newF.createNewFile();
-	                	Path path = Paths.get(derectory + ze.getName());
-	    				try {
-	    					Stream<Path> subPath = Files.walk(path);
-	    					subPath.forEach(System.out::println);
-	    				} catch (IOException e1) {
-	    					// TODO Auto-generated catch block
-	    					e1.printStackTrace();
-	    				}
-	                	
-	                		                	System.out.println(ze.getName());
-	                }
+//	                if (ze.isDirectory()) {
+//	                	File newFolder = new File(newDestDir +File.separator +ze.getName());
+//	                	newFolder.mkdirs();
+//	                	
+////	                	Path path = Paths.get(derectory + ze.getName());
+////	    				try {
+////	    					Stream<Path> subPath = Files.walk(path);
+////	    					subPath.forEach(System.out::println);
+////	    				} catch (IOException e1) {
+////	    					// TODO Auto-generated catch block
+////	    					e1.printStackTrace();
+////	    				}
+//	                	
+//	                	  
+//
+//	                	
+//	                		                	System.out.println(ze.getName());
+//	                }
 	                FileOutputStream fos = new FileOutputStream(newFile);
                 	int len;
                 	while ((len = zis.read(buffer)) > 0) {
+                		
                 		fos.write(buffer, 0, len);
                 		
                 	}
