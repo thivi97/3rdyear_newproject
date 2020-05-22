@@ -167,7 +167,25 @@
 <br>
 <br>
 
+<article class="bg-secondary mb-3" style="padding-bottom: 199px;">
+<div class="card-body text-center">
+<br>
+<p>
+	<a class="btn btn-warning" target="_blank" href="weightOptionpage.jsp"> Save/Back
+	<i class="fa fa-window-restore"></i>
+	</a>
+	
+	<a class="btn btn-success" target="_blank" href="uploadPageControl.jsp"> Save/Exit
+	<i class="fa fa-window-restore"></i>
+	</a>
 
+
+
+</p>
+</div>
+<br>
+<br>
+</article>
 
 
 </body>

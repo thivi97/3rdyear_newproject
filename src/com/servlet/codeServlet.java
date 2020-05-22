@@ -8,6 +8,7 @@ import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
+import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
 import java.util.stream.Stream;
@@ -29,6 +30,8 @@ import com.javaClass.SizeVariable;
 import com.javaClass.variable;
 import com.model.Inheritance;
 import com.service.InheritanceModel;
+
+import com.service.ControlStructureCalculation;
 
 
 /**
@@ -187,7 +190,26 @@ public class codeServlet extends HttpServlet {
 		}
 		
 		if(button.equals("ControlStructure")) {
+			String rows;
+
+			ArrayList<String> row = new ArrayList<>();
 			
+			row.add(rows);
+			ControlStructureCalculation complexity = new ControlStructureCalculation(row);
+			
+			ArrayList<Integer> Count = complexity.cntrolrow();
+			ArrayList<Integer> WTC = complexity.wtcrow();
+			ArrayList<Integer> NC = complexity.ncrow();
+			ArrayList<Integer> Ccspps = complexity.ccsppsrow();
+			
+			
+	      request.setAttribute("Count", Count);
+	      request.setAttribute("WTC", WTC);
+	      request.setAttribute("NC", NC);
+	      request.setAttribute("Ccspps", Ccspps);
+	      
+		  request.getRequestDispatcher("resultControlStructure.jsp").forward(request, response);
+	
 			
 		}
 		
