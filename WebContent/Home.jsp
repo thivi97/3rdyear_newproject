@@ -46,7 +46,7 @@ https://www.tooplate.com/view/2113-earth
             <li><a href="#2"><img src="assets/images/icon-2.png" alt=""> <em>About Us</em></a></li>
             <li><a href="#3"><img src="assets/images/icon-3.png" alt=""> <em>Functions</em></a></li>
             <li><a href="#4"><img src="assets/images/icon-4.png" alt=""> <em>Contact Us</em></a></li>
-            <li><a href="#5"><img src="assets/images/icon-5.png" alt=""> <em>Log Out</em></a></li>
+            
           </ul>
         </nav>
         
