@@ -47,7 +47,7 @@
                     <li><a href="coupling.jsp"><i class="fas fa-coupling"></i>COUPLING</a></li>
                     <li><a href="uploadPageControl.jsp"><i class="fas fa-structure"></i>CONTROL STRUCTURE</a></li>
                    
-                    <li><a href="login.jsp"><i class="fas fa-total"></i>Logout</a></li>
+                    <li><a href="index.jsp"><i class="fas fa-total"></i>Logout</a></li>
                 </ul>
                 
                     

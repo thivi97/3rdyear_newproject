@@ -49,7 +49,7 @@ public class UserServlet extends HttpServlet{
 				response.sendRedirect("Home.jsp");
 			}
 			else {
-				response.sendRedirect("login.jsp");
+				response.sendRedirect("index.jsp");
 			}
 		}catch(ClassNotFoundException e) {
 			e.printStackTrace();

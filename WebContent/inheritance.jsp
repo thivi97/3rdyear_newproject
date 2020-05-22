@@ -1,4 +1,4 @@
-<%@ page import="com.model.FileUpload" %>
+
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
 <!DOCTYPE html>
@@ -70,7 +70,7 @@
                     <li><a href="coupling.jsp"><i class="fas fa-coupling"></i>COUPLING</a></li>
                     <li><a href="uploadPageControl.jsp"><i class="fas fa-structure"></i>CONTROL STRUCTURE</a></li>
                    
-                    <li><a href="login.jsp"><i class="fas fa-total"></i>Logout</a></li>
+                    <li><a href="index.jsp"><i class="fas fa-total"></i>Logout</a></li>
                 </ul>
                 
                     
@@ -78,10 +78,7 @@
             
         </div>
         
-        			<form action="FileUploadInheritance" enctype="multipart/form-data" method="post" Style = "margin-left: 100px; margin-top: 30px;">
-        			<input type="file" name="file2" class="button1"/><br>
-        				 <input class = "btn btn-primary" type = "submit" name = "button" value = "Inheritance"  style = "height: 50px; width: 100px; float: right;">
-        			</form>
+        			
         
                     <br>
                     <br>

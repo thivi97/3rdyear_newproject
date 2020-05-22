@@ -113,7 +113,7 @@
                  
                  
                   
-                 Already have account? <a href="login.jsp" style="text-decoration: none; font-family: 'Play',sans-serif; color: yellow;">&nbsp;LogIn</a>
+                 Already have account? <a href="index.jsp" style="text-decoration: none; font-family: 'Play',sans-serif; color: yellow;">&nbsp;LogIn</a>
             </form>
             
             

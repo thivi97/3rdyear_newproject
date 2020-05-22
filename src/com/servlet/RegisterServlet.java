@@ -51,7 +51,7 @@ public class RegisterServlet extends HttpServlet {
         	e.printStackTrace();
         }
         
-        response.sendRedirect("signup.jsp");
+        response.sendRedirect("index.jsp");
        
 
     }
