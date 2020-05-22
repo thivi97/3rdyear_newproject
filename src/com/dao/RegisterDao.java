@@ -19,7 +19,7 @@ public class RegisterDao {
 		Class.forName("com.mysql.jdbc.Driver");
 		
 		try {
-			Connection connection = DriverManager.getConnection("jdbc:mysql://localhost:3305/codecomplexity?useSSL=false","root","msdhoni07@T");
+			Connection connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/codecomplexity?useSSL=false","root","");
 			
 			PreparedStatement preparedStmt = connection.prepareStatement(insert_user);
 			

@@ -40,13 +40,13 @@ public class UserServlet extends HttpServlet{
 		try {
 			
 			Class.forName("com.mysql.jdbc.Driver");
-			Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3305/codecomplexity","root","msdhoni07@T");
+			Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/codecomplexity","root","");
 			Statement stmt = con.createStatement();
 			
 			ResultSet rs = stmt.executeQuery("select uname,password from userinfo where uname='"+name+"' and password='"+pwd+"'");
 			
 			if(rs.next()) {
-				response.sendRedirect("index.jsp");
+				response.sendRedirect("Home.jsp");
 			}
 			else {
 				response.sendRedirect("login.jsp");
