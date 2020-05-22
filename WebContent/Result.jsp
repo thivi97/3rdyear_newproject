@@ -1,3 +1,4 @@
+
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
 <!DOCTYPE html>
@@ -56,6 +57,11 @@
         </div>
         -->
         
+        <div id="result">
+            <h3>${requestScope["message"]}</h3>
+        </div>
+      
+  
         <h3 style="margin-left: 300px; margin-top:50px; ">Complexity due to Inheritance</h3>
         
         <br><br><br>
@@ -89,6 +95,7 @@
 		<br>
 		<br>
 		<a href="inheritance.jsp"><input type="button" id="forward" value="Back"></a>
+		<a href="InheritanceWeight.jsp"><input type="button" id="weight" value="Weight Edit"></a>
 		<input type="button" id="btnExport" value="Export to PDF"  />
 		<button onclick="exportTableToExcel('dtBasicExample', 'inheritance')" style="background-color: #4CAF50; border-radius: 4px; ">Export To CSV</button>
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>

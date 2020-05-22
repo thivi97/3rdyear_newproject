@@ -81,6 +81,10 @@
             
         </div>
         
+        			<form action="FileUploadInheritance" enctype="multipart/form-data" method="post" Style = "margin-left: 100px; margin-top: 30px;">
+        			<input type="file" name="file2" class="button1"/><br>
+        				 <input class = "btn btn-primary" type = "submit" name = "button" value = "Inheritance"  style = "height: 50px; width: 100px; float: right;">
+        			</form>
         
                     <br>
                     <br>

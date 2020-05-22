@@ -8,6 +8,7 @@ public class InheritanceModel {
 	    private int No_of_indirect_inheritances;
 	    private int Total_inheritances;
 	    private int Ci;
+	    private int lineNumber;
 
 	    public InheritanceModel() {
 	    }
@@ -20,6 +21,13 @@ public class InheritanceModel {
 	        this.Total_inheritances = Total_inheritances;
 	        this.Ci = Ci;
 	    }
+	    
+	    public int getLineNumber() {
+			return lineNumber;
+		}
+		public void setLineNumber(int lineNumber) {
+			this.lineNumber = lineNumber;
+		}
 
 	    public int getCount() {
 	        return count;
