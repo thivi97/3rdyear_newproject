@@ -63,7 +63,6 @@ public class UploadFileServlet extends HttpServlet {
 		// TODO Auto-generated method stub
 		System.out.println("working...");
         
-		
 		try {
 			String submitBtn = request.getParameter("submitBtn");
 			

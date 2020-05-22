@@ -55,7 +55,7 @@ public class testServlet extends HttpServlet {
 			session.setAttribute("sizeNumerical",sizeNumerical);
 			String sizeString = request.getParameter("sizeString");
 			session.setAttribute("sizeString",sizeString);
-			RequestDispatcher dispatcher = getServletContext().getRequestDispatcher("/resultSize.jsp");
+			RequestDispatcher dispatcher = getServletContext().getRequestDispatcher("/WeightSize.jsp");
 			dispatcher.forward(request, response);
 		}else if(type.equals("variable")) {
 			String variableGlobal = request.getParameter("variableGlobal");
@@ -66,7 +66,7 @@ public class testServlet extends HttpServlet {
 			session.setAttribute("variablePrimitive",variablePrimitive);
 			String variableComposite = request.getParameter("variableComposite");
 			session.setAttribute("variableComposite",variableComposite);
-			RequestDispatcher dispatcher = getServletContext().getRequestDispatcher("/resultVariable.jsp");
+			RequestDispatcher dispatcher = getServletContext().getRequestDispatcher("/WeightVariable.jsp");
 			dispatcher.forward(request, response);
 		}else if(type.equals("method")) {
 			String methodPrimitive = request.getParameter("methodPrimitive");
@@ -77,7 +77,7 @@ public class testServlet extends HttpServlet {
 			session.setAttribute("methodPrimitiveData",methodPrimitiveData);
 			String methodCompositeData = request.getParameter("methodCompositeData");
 			session.setAttribute("methodCompositeData",methodCompositeData);
-			RequestDispatcher dispatcher = getServletContext().getRequestDispatcher("/resultMethod.jsp");
+			RequestDispatcher dispatcher = getServletContext().getRequestDispatcher("/WeightMethod.jsp");
 			dispatcher.forward(request, response);
 		}else if(type.equals("controlStructure")) {
 			String condition = request.getParameter("condition");
