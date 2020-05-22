@@ -14,6 +14,18 @@
 <meta charset="ISO-8859-1">
 <title>Result Size</title>
 
+		<style>
+			 input[type=button]{
+                background-color: #4CAF50;
+                color: white;
+				margin-left: 450px;               
+                border: none;
+                border-radius: 4px;
+                cursor: pointer;
+                float: center;
+                
+            }
+		</style>
 
 </head>
 <body>
@@ -69,7 +81,8 @@
 		}
 	%>
 	</table>
-	<input type="button" id="btnExport" value="Export"  />
+	<input type="button" id="btnExport" value="Export to PDF"  />
+		<button onclick="exportTableToExcel('tab-01', 'size')" style="background-color: #4CAF50; border-radius: 4px; ">Export To CSV</button>
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.22/pdfmake.min.js"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/0.4.1/html2canvas.min.js"></script>
@@ -84,10 +97,11 @@
                             width: 500
                         }]
                     };
-                    pdfMake.createPdf(docDefinition).download("Size.pdf");
+                    pdfMake.createPdf(docDefinition).download("size.pdf");
                 }
             });
         });
+        
         function exportTableToExcel(tableID, filename = ''){
             var downloadLink;
             var dataType = 'application/vnd.ms-excel';
@@ -118,6 +132,7 @@
                 downloadLink.click();
             }
         }
+        
     </script>
 	
 </body>

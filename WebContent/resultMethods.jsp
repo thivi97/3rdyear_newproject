@@ -14,6 +14,18 @@
         <script src="https://kit.fontawesome.com/b99e675b62.js"></script>
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
+		<style>
+			 input[type=button]{
+                background-color: #4CAF50;
+                color: white;
+				margin-left: 450px;               
+                border: none;
+                border-radius: 4px;
+                cursor: pointer;
+                float: center;
+                
+            }
+		</style>
 </head>
 <body>
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -74,7 +86,8 @@
 		}
 	%>
 	</table>
-	<input type="button" id="btnExport" value="Export"  />
+	<input type="button" id="btnExport" value="Export to PDF"  />
+		<button onclick="exportTableToExcel('tab-01', 'method')" style="background-color: #4CAF50; border-radius: 4px; ">Export To CSV</button>
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.22/pdfmake.min.js"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/0.4.1/html2canvas.min.js"></script>
@@ -89,10 +102,11 @@
                             width: 500
                         }]
                     };
-                    pdfMake.createPdf(docDefinition).download("Method.pdf");
+                    pdfMake.createPdf(docDefinition).download("method.pdf");
                 }
             });
         });
+        
         function exportTableToExcel(tableID, filename = ''){
             var downloadLink;
             var dataType = 'application/vnd.ms-excel';
@@ -123,6 +137,7 @@
                 downloadLink.click();
             }
         }
+        
     </script>
 </body>
 </html>

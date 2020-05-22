@@ -95,7 +95,7 @@
 		<br>
 		<br>
 		<a href="inheritance.jsp"><input type="button" id="forward" value="Back"></a>
-		<a href="InheritanceWeight.jsp"><input type="button" id="weight" value="Weight Edit"></a>
+		
 		<input type="button" id="btnExport" value="Export to PDF"  />
 		<button onclick="exportTableToExcel('dtBasicExample', 'inheritance')" style="background-color: #4CAF50; border-radius: 4px; ">Export To CSV</button>
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
@@ -117,7 +117,7 @@
             });
         });
         
-        function exportTableToExcel(tableID, filename = ''){
+        function exportTableToExcel (tableID,filename = '') {
             var downloadLink;
             var dataType = 'application/vnd.ms-excel';
             var tableSelect = document.getElementById(tableID);

@@ -6,7 +6,7 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
-<title>Control Result</title>
+<title>Control Result Inheritance</title>
 <link rel="stylesheet" href="css/bootstrap.css"> 
 
 <style>
@@ -85,7 +85,33 @@ th {
 	</table>
 	
 	<a href="CommonWeight.jsp"><input type="button" id="forward" value="Back"></a>
+	<br>
+	<br>
+	<input type="button" id="btnExport" value="Export to PDF"  />
+   </center>
+   
+		
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.22/pdfmake.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/0.4.1/html2canvas.min.js"></script>
+    <script type="text/javascript">
+        $("body").on("click", "#btnExport", function () {
+            html2canvas($('#dtBasicExample')[0], {
+                onrendered: function (canvas) {
+                    var data = canvas.toDataURL();
+                    var docDefinition = {
+                        content: [{
+                            image: data,
+                            width: 500
+                        }]
+                    };
+                    pdfMake.createPdf(docDefinition).download("inheritance.pdf");
+                }
+            });
+        });
+      
+        </script>
 	
-	</center>
+	
 </body>
 </html>

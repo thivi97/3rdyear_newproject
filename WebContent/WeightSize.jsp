@@ -77,6 +77,32 @@ input[type=button]{
 	</tbody>
 	</table>
 	<a href="CommonWeight.jsp"><input type="button" id="forward" value="Back"></a>
-	</center>
+	<br>
+	<br>
+	<input type="button" id="btnExport" value="Export to PDF"  />
+   </center>
+   
+		
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.22/pdfmake.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/0.4.1/html2canvas.min.js"></script>
+    <script type="text/javascript">
+        $("body").on("click", "#btnExport", function () {
+            html2canvas($('#dtBasicExample')[0], {
+                onrendered: function (canvas) {
+                    var data = canvas.toDataURL();
+                    var docDefinition = {
+                        content: [{
+                            image: data,
+                            width: 500
+                        }]
+                    };
+                    pdfMake.createPdf(docDefinition).download("size.pdf");
+                }
+            });
+        });
+      
+        </script>
+
 </body>
 </html>
