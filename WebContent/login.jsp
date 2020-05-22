@@ -40,12 +40,15 @@
                 <h2 style="color: #fff;">Log In</h2>
                 <input type="text" name="uname" placeholder="Username" required><br /><br />
                 <input type="password" name="password" placeholder="Password" required><br /><br />
-                
+                <br>
+                <br>
                  <a href="index.jsp"><input type="submit" value="Log In" /></a> <br /><br />
-                <div id="container">
-                    <a href="reset.jsp" style="margin-right: 0px; font-size: 13px; font-family: Tahoma, Geneva, sans-serif;">Reset Password</a>
-                    <a href="forget.jsp" style="margin-left: 30px; font-size: 13px; font-family: Tahoma, Geneva, sans-serif;">Forget Password</a>
-                </div><br /><br /><br /><br /><br /><br />
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
                 Don't have account?<a href="signup.jsp" style="font-family:'Play',sans-serif;">&nbsp;Sign Up</a>
                 
             </form>

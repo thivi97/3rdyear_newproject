@@ -142,29 +142,13 @@ https://www.tooplate.com/view/2113-earth
                                 <div class="featured-item"> 
                                 	<a href="variable.jsp"><img src="assets/images/item-01.jpg" alt=""></a>
                                     <div class="down-content">
-                                    <h4>Complexity Variable</h4>
+                                    <h4>Complexity Size, Method & Variable</h4>
                                         
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-12">
-                                <div class="featured-item">
-                                    <a href="size.jsp"><img src="assets/images/item-02.jpg" alt=""></a>
-                                    <div class="down-content">
-                                        <h4>Complexity Size</h4>
-                                       
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-12">
-                                <div class="featured-item">
-                                    <a href="method.jsp"><img src="assets/images/item-03.jpg" alt=""></a>
-                                    <div class="down-content">
-                                        <h4>Complexity Method</h4>
-                                       
-                                    </div>
-                                </div>
-                            </div>
+                       
+                            
                             <div class="col-md-12">
                                 <div class="featured-item">
                                    <a href="inheritance.jsp"><img src="assets/images/item-04.jpg" alt=""></a> 
@@ -185,7 +169,7 @@ https://www.tooplate.com/view/2113-earth
                           
                             <div class="col-md-12">
                                 <div class="featured-item">
-                                   <a href="control.jsp"><img src="assets/images/item-06.jpg" alt=""></a> 
+                                   <a href="control.jsp"><img src="assets/images/item-04.jpg" alt=""></a> 
                                     <div class="down-content">
                                         <h4>Complexity Control Structure</h4>
                                     </div>
@@ -193,66 +177,15 @@ https://www.tooplate.com/view/2113-earth
                             </div>
                               <div class="col-md-12">
                                 <div class="featured-item">
-                                   <a href="indexWeight.jsp"><img src="assets/images/item-01.jpg" alt=""></a> 
+                                   <a href="CommonWeight.jsp"><img src="assets/images/item-01.jpg" alt=""></a> 
                                     <div class="down-content">
-                                        <h4>Weight</h4>
+                                        <h4>Weight Complexity</h4>
                                     </div>
                                 </div>
                             </div>
                             
-                            <div class="col-md-12">
-                                <div class="featured-item">
-                                    <img src="assets/images/item-07.jpg" alt="">
-                                    <div class="down-content">
-                                        <h4>Weight Variable</h4>
-                                       
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-12">
-                                <div class="featured-item">
-                                    <img src="assets/images/item-04.jpg" alt="">
-                                    <div class="down-content">
-                                        <h4>Weight Size</h4>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-12">
-                                <div class="featured-item">
-                                    <img src="assets/images/item-01.jpg" alt="">
-                                    <div class="down-content">
-                                        <h4>Weight Method</h4>
-                                        
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-12">
-                                <div class="featured-item">
-                                    <a href="InheritanceWeight.jsp"></a><img src="assets/images/item-02.jpg" alt="">
-                                    <div class="down-content">
-                                        <h4>Weight Inheritance</h4>
-                                        
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-12">
-                                <div class="featured-item">
-                                    <a href="couplingWeightChanger.jsp"><img src="assets/images/item-03.jpg" alt=""></a>
-                                    <div class="down-content">
-                                        <h4>Weight Coupling</h4>
-                                        
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-12">
-                                <div class="featured-item">
-                                  <a href="controlWeight.jsp"><img src="assets/images/item-04.jpg" alt=""></a>
-                                    <div class="down-content">
-                                        <h4>Weight Control Structure</h4>
-                                        
-                                    </div>
-                                </div>
-                            </div>
+                            
+                            
                         </div>
                     </div>
                 </div>

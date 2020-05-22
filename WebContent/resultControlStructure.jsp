@@ -1,7 +1,8 @@
+<%@page import="java.io.PrintWriter"%>
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
 <!DOCTYPE html>
-<%@page import="java.io.PrintWriter"%>
+
 <%@ taglib prefix = "c" uri = "http://java.sun.com/jsp/jstl/core" %>
 <%@page import="com.service.ControlStructureCalculation"%>
 <%@page import="java.util.ArrayList"%>

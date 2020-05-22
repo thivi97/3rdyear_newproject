@@ -10,12 +10,35 @@ package com.model;
  * @author MAC
  */
 public class controlstructure {
-        private int lineNumber;
+        private int lineNumber,line_weight,no_of_control;
 	private String statement;
         private int Ccs ; //Complexity of a program statement with a control structure
 	private int Wtcs; //Weight due to control structure type
 	private int NC ;  //Number of conditions 
 	private int Ccspps;
+	String line;
+	
+	
+	
+	public int getLine_weight() {
+		return line_weight;
+	}
+	public void setLine_weight(int line_weight) {
+		this.line_weight = line_weight;
+	}
+	public int getNo_of_control() {
+		return no_of_control;
+	}
+	public void setNo_of_control(int no_of_control) {
+		this.no_of_control = no_of_control;
+	}
+	
+	public String getLine() {
+		return line;
+	}
+	public void setLine(String line) {
+		this.line = line;
+	}
         
         
         public int getLineNumber() {
