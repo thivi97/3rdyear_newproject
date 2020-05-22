@@ -42,7 +42,7 @@
                 <input type="password" name="password" placeholder="Password" required><br /><br />
                 <br>
                 <br>
-                 <a href="index.jsp"><input type="submit" value="Log In" /></a> <br /><br />
+                 <input type="submit" value="Log In" /><br /><br />
                 <br>
                 <br>
                 <br>

@@ -185,30 +185,29 @@ public class codeServlet extends HttpServlet {
 			request.getRequestDispatcher("Result.jsp").forward(request, response);
 		}
 		
-		if(button.contentEquals("Inherit")) {
-			request.getRequestDispatcher("InheritanceWeight.jsp").forward(request, response);
-		}
+		
+		
 		
 		if(button.equals("ControlStructure")) {
-			String rows;
-
-			ArrayList<String> row = new ArrayList<>();
-			
-			row.add(rows);
-			ControlStructureCalculation complexity = new ControlStructureCalculation(row);
-			
-			ArrayList<Integer> Count = complexity.cntrolrow();
-			ArrayList<Integer> WTC = complexity.wtcrow();
-			ArrayList<Integer> NC = complexity.ncrow();
-			ArrayList<Integer> Ccspps = complexity.ccsppsrow();
-			
-			
-	      request.setAttribute("Count", Count);
-	      request.setAttribute("WTC", WTC);
-	      request.setAttribute("NC", NC);
-	      request.setAttribute("Ccspps", Ccspps);
-	      
-		  request.getRequestDispatcher("resultControlStructure.jsp").forward(request, response);
+//			String rows;
+//
+//			ArrayList<String> row = new ArrayList<>();
+//			
+//			row.add(rows);
+//			ControlStructureCalculation complexity = new ControlStructureCalculation(row);
+//			
+//			ArrayList<Integer> Count = complexity.cntrolrow();
+//			ArrayList<Integer> WTC = complexity.wtcrow();
+//			ArrayList<Integer> NC = complexity.ncrow();
+//			ArrayList<Integer> Ccspps = complexity.ccsppsrow();
+//			
+//			
+//	      request.setAttribute("Count", Count);
+//	      request.setAttribute("WTC", WTC);
+//	      request.setAttribute("NC", NC);
+//	      request.setAttribute("Ccspps", Ccspps);
+//	      
+//		  request.getRequestDispatcher("resultControlStructure.jsp").forward(request, response);
 	
 			
 		}
