@@ -88,7 +88,7 @@ public class testServlet extends HttpServlet {
 			session.setAttribute("switchCase",switchCase);
 			String caseOnly = request.getParameter("caseOnly");
 			session.setAttribute("caseOnly",caseOnly);
-			RequestDispatcher dispatcher = getServletContext().getRequestDispatcher("/resultControl.jsp");
+			RequestDispatcher dispatcher = getServletContext().getRequestDispatcher("/ResultWeightControl.jsp");
 			dispatcher.forward(request, response);
 		}else if(type.equals("inheritance")) {
 			String Inheritance = request.getParameter("Inheritance");
@@ -118,10 +118,10 @@ public class testServlet extends HttpServlet {
 			session.setAttribute("regularGlobal",regularGlobal);
 			String recursiveGlobal = request.getParameter("recursiveGlobal");
 			session.setAttribute("recursiveGlobal",recursiveGlobal);
-			RequestDispatcher dispatcher = getServletContext().getRequestDispatcher("/resultCoplings.jsp");
+			RequestDispatcher dispatcher = getServletContext().getRequestDispatcher("/WeightCoupling.jsp");
 			dispatcher.forward(request, response);
 		}else if(type.equals("all")) {
-			RequestDispatcher dispatcher = getServletContext().getRequestDispatcher("/resultAll.jsp");
+			RequestDispatcher dispatcher = getServletContext().getRequestDispatcher("/total.jsp");
 			dispatcher.forward(request, response);
 		}
 		

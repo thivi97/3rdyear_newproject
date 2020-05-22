@@ -6,7 +6,7 @@
 <head>
 <meta charset="ISO-8859-1">
 <title>Control Result</title>
-
+<link rel="stylesheet" href="css/bootstrap.css"> 
 <style>
 table, td, th {
   border: 1px solid black;
@@ -20,13 +20,24 @@ table {
 th {
   text-align: left;
 }
+
+input[type=button]{
+                background-color: #4CAF50;
+                color: white;
+				              
+                border: none;
+                border-radius: 4px;
+                cursor: pointer;
+                float: center;
+                
+            }
 </style>
 </head>
 <body>
 	<center>
 	<h1>Code Complexity Of Control</h1>
-	<table class="table">
-	<tr>
+	<table id="dtBasicExample" class="table table-striped table-bordered table-sm">
+	 <tr class="p-3 mb-2 bg-primary text-white">
 	<thead>
 		<th>Line no</th>
 		<th>Program statements</th>
@@ -48,7 +59,7 @@ th {
 	for (controlstructure control : arrayList3) {
 		int total = (control.getLine_weight()*control.getNo_of_control())+control.getCcspps();
 %>
-		<tr>
+		<tr class="grid">
 			<td><%=control.getLineNumber() %></td>
 			<td><%=control.getLine() %></td>
 			<td><%=control.getLine_weight() %></td>
@@ -61,6 +72,7 @@ th {
 %>
 	</tbody>
 	</table>
+	<a href="CommonWeight.jsp"><input type="button" id="forward" value="Back"></a>
 	</center>
 </body>
 </html>

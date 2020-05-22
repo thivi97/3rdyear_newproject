@@ -41,12 +41,12 @@
             <div class="sidebar">
                 <h2>CDE SOLUTIONS</h2>
                 <ul>
-                   <li><a href="index.jsp"><i class="fas fa-home"></i>HOME</a></li>
+                  <li><a href="indexComplexity.jsp"><i class="fas fa-home"></i>HOME</a></li>
                     <li><a href="uploadFileSVM.jsp"><i class="fas fa-size"></i>SIZE,METHOD & VARIABLE</a></li>
                     <li><a href="inheritance.jsp"><i class="fas fa-inheritance"></i>INHERITANCE</a></li>
                     <li><a href="coupling.jsp"><i class="fas fa-coupling"></i>COUPLING</a></li>
-                    <li><a href="control.jsp"><i class="fas fa-structure"></i>CONTROL STRUCTURE</a></li>
-                    <li><a href="#"><i class="fas fa-total"></i>TOTAL</a></li>
+                    <li><a href="uploadPageControl.jsp"><i class="fas fa-structure"></i>CONTROL STRUCTURE</a></li>
+                   
                     <li><a href="login.jsp"><i class="fas fa-total"></i>Logout</a></li>
                 </ul>
                 

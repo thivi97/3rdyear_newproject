@@ -6,7 +6,7 @@
 <head>
 <meta charset="ISO-8859-1">
 <title>Control Result</title>
-
+<link rel="stylesheet" href="css/bootstrap.css"> 
 <style>
 table, td, th {
   border: 1px solid black;
@@ -20,13 +20,24 @@ table {
 th {
   text-align: left;
 }
+
+ input[type=button]{
+                background-color: #4CAF50;
+                color: white;
+				              
+                border: none;
+                border-radius: 4px;
+                cursor: pointer;
+                float: center;
+                
+            }
 </style>
 </head>
 <body>
 	<center>
 	<h1>Code Complexity Of All</h1>
-	<table class="table">
-	<tr>
+	<table id="dtBasicExample" class="table table-striped table-bordered table-sm">
+	 <tr class="p-3 mb-2 bg-primary text-white">
 	<thead>
 		<th>Line no</th>
 		<th>Program statements</th>
@@ -126,7 +137,7 @@ th {
 				int rowTotal=Cs+Cv+Cm+Ccp+Ccs;
 				
 		%>
-				<tr>
+				<tr class="grid">
 					<td><%=arrayList.get(i).getLineNumber() %></td>
 					<td><%=arrayList.get(i).getLine() %></td>
 					<td><%=Cs %></td>
@@ -141,7 +152,7 @@ th {
 			}	
 			int total=totalCs+totalCv+totalCm+totalCi+totalCcp+totalCcs;
 		%>
-		<tr>
+		<tr class="grid">
 					<td></td>
 					<td>Total</td>
 					<td><%=totalCs %></td>
@@ -154,6 +165,7 @@ th {
 				</tr>
 	</tbody>
 	</table>
+	<a href="CommonWeight.jsp"><input type="button" id="forward" value="Back"></a>
 	</center>
 </body>
 </html>
