@@ -13,7 +13,7 @@ import org.apache.commons.fileupload.FileItemFactory;
 import org.apache.commons.fileupload.disk.DiskFileItemFactory;
 import org.apache.commons.fileupload.servlet.ServletFileUpload;
 
-import ComplexityControlStructure.ControlStructureCalculationMain;
+import com.service.ControlStructureCalculationMain;
 
 public class FileUploadHandlerControl extends HttpServlet {
 	private static final long serialVersionUID = 1;

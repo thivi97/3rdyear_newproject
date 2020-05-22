@@ -1,15 +1,18 @@
-<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-    pageEncoding="ISO-8859-1"%>
+<%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
+
+
 <html>
 <head>
 <meta charset="ISO-8859-1">
 <title>Coupling</title>
-<link rel="icon" type="image/png" href="images/cde.png">
-        <link rel="stylesheet" href="css/styles.css">
-        <script src="https://kit.fontawesome.com/b99e675b62.js"></script>
-        
-        <style>
+ <link rel="icon" type="image/png" href="images/cde.png">
+ <link rel="stylesheet" href="css/styles.css">
+  <script src="https://kit.fontawesome.com/b99e675b62.js"></script>
+  <script src="js/uploadfile.js"></script>
+  
+     <style>
+     
             *{
                 box-sizing: border-box;
             }
@@ -34,13 +37,14 @@
             
             
         </style>
-    </head>
-    <body>
-        <div class="wrapper">
+</head>
+<body>
+
+       <div class="wrapper">
             <div class="sidebar">
                 <h2>CDE SOLUTIONS</h2>
                 <ul>
-                   <li><a href="indexComplexity.jsp"><i class="fas fa-home"></i>HOME</a></li>
+                   <li><a href="index.jsp"><i class="fas fa-home"></i>HOME</a></li>
                     <li><a href="size.jsp"><i class="fas fa-size"></i>SIZE</a></li>
                     <li><a href="method.jsp"><i class="fas fa-method"></i>METHOD</a></li>
                     <li><a href="variable.jsp"><i class="fas fa-variable"></i>VARIABLE</a></li>
@@ -48,7 +52,6 @@
                     <li><a href="coupling.jsp"><i class="fas fa-coupling"></i>COUPLING</a></li>
                     <li><a href="control.jsp"><i class="fas fa-structure"></i>CONTROL STRUCTURE</a></li>
                     <li><a href="#"><i class="fas fa-total"></i>TOTAL</a></li>
-                    <li><a href="indexWeight.jsp"><i class="fas fa-weight"></i>WEIGHT</a></li>
                     <li><a href="login.jsp"><i class="fas fa-total"></i>Logout</a></li>
                 </ul>
                
@@ -68,26 +71,31 @@
                     <div>
                         <h3>Choose File to upload </h3>
                         <br>
-                        <form action="FileUploadHandler" enctype="multipart/form-data" method="post">
-                            Select<input type="file" name="file_name"/>
-                            <input type="submit" value="upload"/>
-                        </form>
-                    </div>
-                    <br>
-                    <br>
-                    <br>
-                    <form method="post" action="index.jsp">
+                          <form action="UploadServletCoupling" method="post" enctype="multipart/form-data" name="form1" id="form1">
+						   <input type="text" id="filename" style="width: 50%;float: left;" />
+								<label>Browse <input name="file" type="file" id="file" multiple style="display: none;" onChange="uploadOnChange(this)">
+						       </label>
+						        <br>
+						        <br>
+						        <input type="submit" name="submit" value="Proceed" style="width: 10%;float: right" />
+						   </form>
+						   </br>
+						   <br>
+					  </div>
+					  <br>
+                      <br>
+                      <br>
+                      <form method="post" action="index.jsp">
                         <textarea name="tx" placeholder="Write Something..." style="height: 200px">${requestScope["message"]}</textarea>
                         
                     
                 </div>
-                        <div class="row">
-                            <button type="save" onclick="alert('successful!')">SAVE</button>
-                        </div>
+                        
                     </form>    
-                        <a href="result.jsp"><input name="btnsum2" type="submit" value="next"></a>
+                        
             </div>
             
         </div>
-    </body>
+	
+</body>
 </html>

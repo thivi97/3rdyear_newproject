@@ -34,7 +34,7 @@
                     <li><a href="methodWeight.jsp"><i class="fas fa-method"></i>METHOD</a></li>
                     <li><a href="variableWeight.jsp"><i class="fas fa-variable"></i>VARIABLE</a></li>
                     <li><a href="InheritanceWeight.jsp"><i class="fas fa-inheritance"></i>INHERITANCE</a></li>
-                    <li><a href="couplingWeight.jsp"><i class="fas fa-coupling"></i>COUPLING</a></li>
+                    <li><a href="couplingWeightChanger.jsp"><i class="fas fa-coupling"></i>COUPLING</a></li>
                     <li><a href="controlWeight.jsp"><i class="fas fa-control"></i>CONTROL STRUCTURE</a></li>
                     <li><a href="indexComplexity.jsp"><i class="fas fa-total"></i>COMPLEXITY</a></li>
                     <li><a href="login.jsp"><i class="fas fa-login"></i>LOGOUT</a></li>

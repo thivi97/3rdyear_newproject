@@ -237,7 +237,7 @@ https://www.tooplate.com/view/2113-earth
                             </div>
                             <div class="col-md-12">
                                 <div class="featured-item">
-                                    <img src="assets/images/item-03.jpg" alt="">
+                                    <a href="couplingWeightChanger.jsp"><img src="assets/images/item-03.jpg" alt=""></a>
                                     <div class="down-content">
                                         <h4>Weight Coupling</h4>
                                         
