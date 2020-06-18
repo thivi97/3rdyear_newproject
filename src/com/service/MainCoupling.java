@@ -14,7 +14,11 @@ public class MainCoupling {
 	private boolean status;
 	private ArrayList<CustomFileCoupling> fileList = new ArrayList<CustomFileCoupling>();
 	private String fileType = "";
-	public static String WEBCONTENTDIR = "C:/Users/nusry/git/washi git coupling/3rdyear_newproject/WebContent/";
+	//public static String WEBCONTENTDIR = "C:/Users/nusry/git/Last Clone/3rdyear_newproject/WebContent/";
+	
+	//for Azure hosting
+	public static String WEBCONTENTDIR = "d:\\home\\site\\wwwroot\\webapps\\ROOT\\";
+	
 	//public static String WEBCONTENTDIR = "git/CodeComplexityCalculator/CCC/WebContent/";
 	//Folder path inside the server( public static String WEBCONTENTDIR = "/opt/tomcat/webapps/ROOT/"; )
 
