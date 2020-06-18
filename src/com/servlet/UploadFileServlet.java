@@ -30,9 +30,6 @@ import com.service.ComplexityMethodsService;
 import com.service.ComplexitySizeService;
 import com.service.ComplexityVariableService;
 
-
-
-
 /**
  * Servlet implementation class UploadFileServlet
  */
@@ -69,7 +66,7 @@ public class UploadFileServlet extends HttpServlet {
 			InputStream inputStream = null; // input stream of the upload file
 	         
 	        // obtains the upload file part in this multipart request
-	        Part filePart = request.getPart("uploadFileSVM");
+	        Part filePart = request.getPart("uploadFile");
 	        if (filePart != null) {
 	            // prints out some information for debugging
 	            System.out.println(filePart.getName());

@@ -140,7 +140,7 @@ https://www.tooplate.com/view/2113-earth
                             </div>
                             <div class="col-md-12">
                                 <div class="featured-item"> 
-                                	<a href="uploadFilesSVM.jsp"><img src="assets/images/item-01.jpg" alt=""></a>
+                                	<a href="uploadFileSVM.jsp"><img src="assets/images/item-01.jpg" alt=""></a>
                                     <div class="down-content">
                                     <h4>Complexity Size, Method & Variable</h4>
                                         
